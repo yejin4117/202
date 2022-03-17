@@ -139,7 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="04 함수의 정의.c" />
+    <ClInclude Include="04.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="기본\04.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
