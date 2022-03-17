@@ -15,12 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="04.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="기본\04.c">
+    <ClCompile Include="기본\05 논리연산자.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
