@@ -18,10 +18,7 @@
     <ClCompile Include="C++기본\기본.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="07 포인터기본.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="09포인터연산.c">
+    <ClCompile Include="12 구조체 CallBy포인터.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
