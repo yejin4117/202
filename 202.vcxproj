@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="07 포인터기본.c" />
     <ClCompile Include="C++기본\기본.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
