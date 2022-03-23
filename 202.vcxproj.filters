@@ -21,5 +21,8 @@
     <ClCompile Include="07 포인터기본.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="09포인터연산.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

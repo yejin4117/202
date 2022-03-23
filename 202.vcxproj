@@ -19,7 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="07 포인터기본.c" />
+    <ClCompile Include="07 포인터기본.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="09포인터연산.c" />
     <ClCompile Include="C++기본\기본.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
