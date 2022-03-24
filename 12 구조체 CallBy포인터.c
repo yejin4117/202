@@ -6,7 +6,7 @@ typedef struct
 	float y;
 }Jum;
 
-void AddValueToJum(Jum j);
+void AddValueToJum(Jum* j);
 
 int main(void)
 {
