@@ -19,9 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="17 증감연산자.c" />
-    <ClCompile Include="C++기본\기본.cpp" />
-    <ClCompile Include="12 구조체 CallBy포인터.c" />
+    <ClCompile Include="static 지역변수.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
