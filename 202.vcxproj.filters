@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="02-10 string 문자열 시작주소.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="03-01 class생성자.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
