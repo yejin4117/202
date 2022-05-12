@@ -18,6 +18,17 @@ public:
 	void show(void);
 };
 
+int main(void) {
+	Student* stu1 = new Student();
+	stu1->show();
+
+	Student* stu2 = new Student(1111, "JWP");
+	stu2->show();
+
+	delete stu1;
+	return 0;
+}
+
 Student::Student()
 {
 	this->nHakbun = 1234;
@@ -36,14 +47,4 @@ void Student::show()
 {
 	cout << "학번은 " << nHakbun << "입니다." << endl;
 	cout << "이름은 " << sName << "입니다." << endl << endl;
-}
-
-int main(void) {
-	Student stu1 = Student();
-	stu1.show();
-
-	Student stu2 = Student(1111, "JMP");
-	stu2.show();
-
-	return 0;
 }
