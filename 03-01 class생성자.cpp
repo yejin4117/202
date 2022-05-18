@@ -15,7 +15,7 @@ private:
 public:
 	Student(void);
 	Student(int Hakbun, const char* Name);
-	void show(void);
+	Student(const Student& rch);
 	//소멸자 : 객체가 메모리에서 해제될 때 호출되는 함수
 	~Student();
 	void show(void);
@@ -25,14 +25,20 @@ public:
 int main(void)
 {
 	Student stu1 = Student(1111, "JWP");
+	//복사생성자 호출
+	Student stu2 = stu1;
+
 	stu1.show();
+	stu2.show();
+
 	return 0;
 }
+//Student::Student(int Hakbun, string name) {
+//   this->nHakbun = Hakbun;
+//   this->sName = name;
+//   cout << "학번이 등록 되었습니다." << endl;
+//}
 
-Student::Student(void)
-{
-
-}
 
 Student::Student(int Hakbun, const char* Name)
 //객체생성과 동시에 멤버변수 초기화 //멤버변수(매개변수)
@@ -42,7 +48,14 @@ Student::Student(int Hakbun, const char* Name)
 	cout << "일반생성자가 호출" << endl;
 	int len = strlen(Name) + 1; //공간개수 측정
 	sName = new char[len]; //공간생성
-	strcpy(sName, Name);
+	strcpy(sName, Name);	//매개변수에 있는 문자열 복사
+
+}
+
+Student::Student(const Student& rhs)
+	:nHakbun(rhs.nHakbun), sName(rhs.sName)
+{
+	cout << "복사생성자 호출" << endl;
 }
 
 Student::~Student()
