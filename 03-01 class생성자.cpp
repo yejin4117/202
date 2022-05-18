@@ -11,11 +11,15 @@ private:
 	char* sName;
 
 	//생성자 : ?객체가 생성될 때, 호출되는 함수
-	// 반환형을 갖고 있지 않는다.
+
 public:
 	Student(void);
 	Student(int Hakbun, const char* Name);
 	void show(void);
+	//소멸자 : 객체가 메모리에서 해제될 때 호출되는 함수
+	~Student();
+	void show(void);
+
 };
 
 int main(void)
@@ -40,6 +44,13 @@ Student::Student(int Hakbun, const char* Name)
 	sName = new char[len]; //공간생성
 	strcpy(sName, Name);
 }
+
+Student::~Student()
+{
+	delete[] sName;
+	cout << "소멸자 호출" << endl;
+}
+
 void Student::show()
 {
 	cout << "학번은 " << nHakbun << "입니다." << endl;
