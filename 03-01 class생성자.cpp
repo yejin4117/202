@@ -1,5 +1,6 @@
 #include <iostream>   //cout, endl 객체를 가지고 있음
 #include <string>   //string 클래스를 가지고 있음
+#define _CRT_SECURE_NO_WARNINGS
 
 //std:: 안써도 된다
 using namespace std;
