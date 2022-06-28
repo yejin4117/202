@@ -17,6 +17,24 @@ public:
 	Student& operator=(const Student& rhs);
 	void show();
 };
+
+class HighSchoolStudent : public Student
+{
+public:
+	HighSchoolStudent(int Hakbun, const char* Name, string Hakgwa)
+		:Student(Hakbun, Name), sHakgwa(Hakgwa) {}
+
+private:
+	string sHakgwa;
+};
+
+int main(void)
+{
+	HighSchoolStudent hss = HighSchoolStudent(1111, "JWP", "soft");
+	hss.show();	//부모클래스의 멤버한수를 호출(자신의 구현이 X)
+	return 0;
+}
+
 Student::Student() {
 
 }

@@ -15,6 +15,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="수행 연습.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
     <ClCompile Include="04-03 대입연산자 오버로딩.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
