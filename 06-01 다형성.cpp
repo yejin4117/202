@@ -6,7 +6,8 @@ using namespace std;
 class Animal {
 public:
 	void eat(void) { cout << "µ¿¹°¸ÔÀÌ" << endl; }
-	void roar(void) { cout << "µ¿¹°Â¢¾î" << endl; }
+	//roarÇÔ¼ö¸¦ °¡»óÇÔ¼öÅ×ÀÌºí¿¡ µî·Ï(µ¿Àû ¹ÙÀÌµù)
+	virtual void roar(void) { cout << "µ¿¹°Â¢¾î" << endl; }
 	void walk(void) { cout << "µ¿¹°°É¾î" << endl; }
 
 private:
@@ -17,12 +18,12 @@ private:
 
 class Tiger : public Animal {
 public:
-	void roar(void) { cout << "¾îÈï" << endl; }
+	void roar(void) override { cout << "¾îÈï" << endl; }
 };
 
 class Dog : public Animal {
 public:
-	void roar(void) { cout << "¸Û¸Û" << endl; }
+	void roar(void) override { cout << "¸Û¸Û" << endl; }
 };
 
 void main(void)
