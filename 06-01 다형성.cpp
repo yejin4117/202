@@ -27,9 +27,15 @@ public:
 
 void main(void)
 {
-	Animal animal;
-	animal.roar();
+	Animal* animal = new Animal();
+	animal -> roar();	//µ¿¹°Â¢¾î
+	delete animal;
 
-	Dog dog;
-	dog.roar();
+	animal = new Tiger();
+	animal->roar();	//µ¿¹°Â¢¾î
+	delete animal;
+
+	animal = new Dog();
+	animal->roar();	//µ¿¹°Â¢¾î
+	delete animal;
 }
