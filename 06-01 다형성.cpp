@@ -5,6 +5,9 @@ using namespace std;
 
 class Animal {
 public:
+	Animal() { cout << "Animal »ý¼º" << endl; }
+	~Animal() { cout << "Animal ¼Ò¸ê" << endl; }
+
 	void eat(void) { cout << "µ¿¹°¸ÔÀÌ" << endl; }
 	//roarÇÔ¼ö¸¦ °¡»óÇÔ¼öÅ×ÀÌºí¿¡ µî·Ï(µ¿Àû ¹ÙÀÌµù)
 	virtual void roar(void) { cout << "µ¿¹°Â¢¾î" << endl; }
@@ -18,25 +21,22 @@ private:
 
 class Tiger : public Animal {
 public:
+	Tiger() { cout << "Tiger »ý¼º" << endl; }
+	~Tiger() { cout << "Tiger ¼Ò¸ê" << endl; }
+
 	void roar(void) override { cout << "¾îÈï" << endl; }
 };
 
 class Dog : public Animal {
 public:
+	Dog() { cout << "Dog »ý¼º" << endl; }
+	~Dog() { cout << "Dog ¼Ò¸ê" << endl; }
+
 	void roar(void) override { cout << "¸Û¸Û" << endl; }
 };
 
 void main(void)
 {
 	Animal* animal = new Animal();
-	animal -> roar();	//µ¿¹°Â¢¾î
-	delete animal;
-
-	animal = new Tiger();
-	animal->roar();	//µ¿¹°Â¢¾î
-	delete animal;
-
-	animal = new Dog();
-	animal->roar();	//µ¿¹°Â¢¾î
 	delete animal;
 }
